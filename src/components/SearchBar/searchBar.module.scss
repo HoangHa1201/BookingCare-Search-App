@@ -1,0 +1,82 @@
+.Search__Bar {
+    margin-top: 20px;
+
+    .Search__Bar--Box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .Search__Bar--Box-Input {
+            input {
+                width: 300px;
+                height: 40px;
+                text-align: center;
+                font-size: 2rem;
+                background-color: #fff;
+                border: 1px solid #7B8FA1;
+                color: #49BCE2;
+                border-radius: 20px;
+
+                &:focus-visible {
+                    outline: none;
+                }
+            }
+
+
+            button {
+                position: relative;
+                top: 0;
+                left: -20px;
+                padding: 0 6px;
+                border-bottom-right-radius: 20px;
+                border-top-right-radius: 20px;
+                background-color: #fff;
+                border: 1px solid #7B8FA1;
+                border-left: 0.5px solid #b5c7d6;
+                font-size: 2.5rem;
+
+                i {
+                    color: #FFC10E;
+                }
+            }
+        }
+
+        .Search__Bar--Box-Output {
+            margin-top: 30px;
+            height: 480px;
+            .Search__Bar--Box-Output_Detail {
+                overflow-y: scroll;
+                max-height: 480px;
+                box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.3);
+                .Search__Bar--Box-Output_True {
+
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 10px 0;
+                        background-color: #fff;
+                        border: 1px solid #7B8FA1;
+                        img {
+                            width: 100px;
+                            height: 100px;
+                        }
+
+                        a {}
+
+                        p {}
+                    }
+                }
+
+                .Search__Bar--Box-Output_False {
+                    display: none;
+                }
+
+                .Search__Bar--Box-Output_False:last-child {
+                    display: block;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
